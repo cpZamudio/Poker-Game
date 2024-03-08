@@ -5,15 +5,13 @@ import pandas as pd
 
 # Variables
 
-# Specify the file path
+# Poker "AI" CSV importing
 csv_file_path = 'Bot-Hand-Model.csv'
+botHands = pd.read_csv(csv_file_path)
 
-# Read the CSV file into a DataFrame
-df = pd.read_csv(csv_file_path)
-
-# Display the DataFrame
-print(df)
-
+# Template to find column
+#result = (df == test_find).any()
+#column = result[result].index.tolist()
     
 # Deck includes all suites, and possible cards in a 52 deck of cards
 deck = ["H2","H3","H4","H5","H6","H7","H8","H9","HT","HJ", "HQ", "HK", "HA",
